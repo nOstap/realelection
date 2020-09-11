@@ -1,0 +1,22 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+        text-align: center;
+    }
+
+    .ballot-box {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+
+        &__candidate {
+            flex: 1;
+            padding: 1rem;
+            max-width: 17rem;
+            display: flex;
+        }
+    }
+}

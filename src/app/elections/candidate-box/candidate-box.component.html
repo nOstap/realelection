@@ -1,0 +1,4 @@
+<ng-container *ngIf="candidate">
+    <img [src]="candidate.photoSrc" class="candidate-image">
+    <button class="vote-btn" [disabled]="hasVoted" (click)="vote()">{{ hasVoted ?  candidate.votes + ' Votes' : 'Vote'}}</button>
+</ng-container>
